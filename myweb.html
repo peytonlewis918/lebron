@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeBron James: The GOAT Case</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .fullscreen-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            background-color: rgba(151, 126, 125, 0.722);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .header img {
+            width: 32%;
+            height: 300px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .section {
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .cavaliers {
+            background-color: #860038;
+            color: #FDBB30;
+        }
+        .heat {
+            background-color: #98002E;
+            color: #F9A01B;
+        }
+        .lakers {
+            background-color: #552583;
+            color: #FDB927;
+        }
+        .stats-table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .stats-table th, .stats-table td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        .stats-table th {
+            background-color: #333;
+            color: white;
+        }
+        .stats-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .video-wrapper {
+            width: 32%;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        h2 {
+            border-bottom: 2px solid currentColor;
+            padding-bottom: 10px;
+        }
+
+        /* Button styles */
+        .resume-button {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #28a745; /* Green background */
+            color: white; /* White text */
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 2;
+            text-decoration: none;
+            text-align: center;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s ease, background-color 0.3s ease;
+        }
+
+        .resume-button:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+
+        .resume-button:visited {
+            color: white; /* Keeps text color white after click */
+            background-color: #28a745; /* Keeps green background after click */
+        }
+
+        /* Sprite buttons styles */
+        .sprite-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745; /* Green background */
+            color: white; /* White text */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 2; /* Keeps buttons in front */
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .sprite-button:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+
+        .sprite-button:visited {
+            color: white; /* Keeps text color white after click */
+            background-color: #28a745; /* Keeps green background after click */
+        }
+
+        .sprite-button-container {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+        }
+
+        /* Makes resume button visible when page is scrolled */
+        .show-button {
+            opacity: 1 !important;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://storage.googleapis.com/pod_public/1300/169465.jpg" alt="Full Screen Goat" class="fullscreen-image">
+    <div class="content">
+        <h1>LeBron James: The GOAT Case</h1>
+        
+        <div class="header">
+            <img src="https://www.indystar.com/gcdn/-mm-/5e31797021db25d8b5cb9a488462a6cef502fd94/c=0-23-2324-1334/local/-/media/Indianapolis/Indianapolis/2014/07/11/1405096031000-Cavaliers-3-Way-Trade-Basketball-NY155-WEB785702.jpg" alt="LeBron Cavaliers" onclick="window.location.href='goat.html';">
+            <img src="https://i.insider.com/58052c48c524024d008b4e97?width=800&format=jpeg&auto=webp" alt="LeBron Heat" onclick="window.location.href='goat.html';">
+            <img src="https://ca-times.brightspotcdn.com/dims4/default/52f0624/2147483647/strip/false/crop/3548x2516+0+0/resize/1486x1054!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fcf%2F67%2F74ef656743528f2f9f7ce02d8dc1%2Fla-photos-1staff-477386-sp-0107-lakers-knicks4-wjs.jpg" alt="LeBron Lakers" onclick="window.location.href='goat.html';">
+        </div>
+
+        <div class="section cavaliers">
+            <h2>Cleveland Cavaliers Era (2003-2010, 2014-2018)</h2>
+            <p>During his initial Cavaliers tenure, LeBron demonstrated unprecedented dominance:</p>
+            <ul>
+                <li>Rookie season averaging 20.9 points, 5.5 rebounds, and 5.9 assists</li>
+                <li>Peak scoring season of 31.4 PPG in 2005-06</li>
+                <li>Consistently improved FG%, reaching 54.8% in 2016-17</li>
+                <li>Led Cavaliers to their first NBA Championship in 2016</li>
+                <li>Averaged 8.6 rebounds and 9.1 assists in his final Cavaliers season (2017-18)</li>
+            </ul>
+        </div>
+
+        <div class="section heat">
+            <h2>Miami Heat Era (2010-2014)</h2>
+            <p>In Miami, LeBron reached new heights of efficiency:</p>
+            <ul>
+                <li>Career-best FG% of 56.7% in 2013-14</li>
+                <li>Exceptional 40.6% from three-point range in 2012-13</li>
+                <li>Averaged 26.9 PPG during Miami tenure</li>
+                <li>2 More NBA Championships</li>
+                <li>Peak efficiency years with 56.5% FG in 2012-13</li>
+            </ul>
+        </div>
+
+        <div class="section lakers">
+            <h2>Los Angeles Lakers Era (2018-Present)</h2>
+            <p>Even in his later career, LeBron continues to dominate:</p>
+            <ul>
+                <li>30.3 PPG in 2021-22 season at age 37</li>
+                <li>Maintained over 25 PPG average through age 39</li>
+                <li>Career-high 10.2 assists per game in 2019-20</li>
+                <li>An NBA Championship Won in 2020</li>
+                <li>41% three-point shooting in 2023-24 season</li>
+            </ul>
+        </div>
+
+        <div class="video-wrapper">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/n6-TNW-liRU" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sprite buttons at top left and right -->
+    <div class="sprite-button-container">
+        <a href="sprite.html" class="sprite-button">Wanna Sprite Cranberry</a>
+        <a href="sprite.html" class="sprite-button">Wanna Sprite Cranberry</a>
+    </div>
+
+    <!-- Resume button at bottom -->
+    <a href="resume.html" class="resume-button">Resume of the Author</a>
+
+    <script>
+        // Handle scroll event to show the bottom button
+        window.onscroll = function() {
+            var resumeButton = document.querySelector('.resume-button');
+            if (window.scrollY > 200) {
+                resumeButton.classList.add('show-button');
+            } else {
+                resumeButton.classList.remove('show-button');
+            }
+        };
+    </script>
+</body>
+</html>

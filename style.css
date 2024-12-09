@@ -1,0 +1,59 @@
+.resume-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 2;
+    text-decoration: none;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease, background-color 0.3s;
+}
+
+.resume-button:hover {
+    background-color: #45a049;
+}
+
+.resume-button:visited {
+    color: rgb(0, 0, 0); /* Keeps text color same as default */
+    background-color: #4CAF50; /* Keeps background same as default */
+}
+.sprite-button {
+    position: fixed;
+    top: 10px; /* Positioned at the top */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 2; /* Keeps buttons in front */
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.sprite-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.sprite-button:visited {
+    color: white; /* Keeps text color white after click */
+    background-color: #28a745; /* Keeps green background after click */
+}
+
+.sprite-button.left {
+    left: 10px; /* Top-left corner */
+}
+
+.sprite-button.right {
+    right: 10px; /* Top-right corner */
+}
